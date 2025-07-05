@@ -49,6 +49,14 @@ Create a verification key for proof verification:
 bb write_vk -b ./target/simple_circuit.json -o ./target
 ```
 
+### 5. Verify the proof
+
+Verify the proof using the verification key and the proof file:
+
+```bash
+bb verify -k ./target/vk -p ./target/proof.gz
+```
+
 ## Proof Verification
 
 Proof verification can be performed both on-chain and off-chain:
@@ -60,8 +68,6 @@ Proof verification can be performed both on-chain and off-chain:
 
 - [Noir Quick Start Guide](https://noir-lang.org/docs/getting_started/quick_start)
 - [Noir Documentation](https://noir-lang.org/docs)
-
-
 
 ## What is a Verification Key?
 
